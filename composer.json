@@ -1,0 +1,34 @@
+{
+    "name": "fmedeiros95/bankon-sdk-php",
+    "description": "Essa biblioteca permite voc\u0000 se conectar com https://dev.bankon.com.br/ facilmente.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fmedeiros95",
+            "email": "felipe.fmedeiros95@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1.8",
+        "guzzlehttp/guzzle": "^7.2",
+        "nesbot/carbon": "^2.26"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "BankOn\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit --do-not-cache-result"
+    }
+}

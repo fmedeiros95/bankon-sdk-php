@@ -76,7 +76,7 @@ try{
     echo $transferencia->getDestinoUsuario();
     echo $transferencia->getDestinoNome();
     echo $transferencia->getDestinoDocumento();
-    $transferencia->getDataCarbon();// retorna a data pra ser usada com a biblioteca https://carbon.nesbot.com/
+    echo $transferencia->getDataCarbon();// retorna a data pra ser usada com a biblioteca https://carbon.nesbot.com/
 
 }catch(BankOnException $e){
     echo $e->getMessage();
